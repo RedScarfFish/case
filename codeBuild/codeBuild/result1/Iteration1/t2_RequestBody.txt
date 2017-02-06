@@ -1,0 +1,6 @@
+"{"id": "sample","gitPath": "https://red_free@bitbucket.org/red_free/nodejs-sample.git","user":"
+" "kidfanjun","buildContext": "","repoName": "sample","name": "nodejs-sample","full_name": "red"
+"_free/nodejs-sample","description": "","git_url": "https://red_free@bitbucket.org/red_free/nod"
+"ejs-sample.git","ssh_url": "ssh://git@bitbucket.org/red_free/nodejs-sample.git","clone_url": ""
+"https://red_free@bitbucket.org/red_free/nodejs-sample.git","private": true,"type": "bitbucket""
+"}"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>creatServiceLN</ScriptName>
+  <Protocol>Java over HTTP</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.java" Filter="2" />
+    <FileEntry Name="Actions.java" Filter="2" />
+    <FileEntry Name="vuser_end.java" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="creatServiceLN.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="creatServiceLN.prm" Filter="2" />
+    <FileEntry Name="config.properties" Filter="2" />
+    <FileEntry Name="testcase.properties" Filter="2" />
+    <FileEntry Name="Json.java" Filter="2" />
+    <FileEntry Name="TestGetPod.java" Filter="2" />
+    <FileEntry Name="TestCreat.java" Filter="2" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="2" />
+    <FileEntry Name="Bookmarks.xml" Filter="2" />
+    <FileEntry Name="Breakpoints.xml" Filter="2" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="2" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="2" />
+    <FileEntry Name="UserTasks.xml" Filter="2" />
+    <FileEntry Name="url.dat" Filter="2" />
+    <FileEntry Name="24065490744.idx" Filter="1" />
+    <FileEntry Name="Action.c" Filter="1" />
+    <FileEntry Name="Actions$1.class" Filter="1" />
+    <FileEntry Name="Actions.class" Filter="1" />
+    <FileEntry Name="Actions.java.bak" Filter="1" />
+    <FileEntry Name="Actions.java.sed" Filter="1" />
+    <FileEntry Name="Compare.class" Filter="1" />
+    <FileEntry Name="creatServiceLN.prm.bak" Filter="1" />
+    <FileEntry Name="creatServiceLN.sdf" Filter="1" />
+    <FileEntry Name="Json.class" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrvEcy.595.log" Filter="1" />
+    <FileEntry Name="mdrvkJD.543.log" Filter="1" />
+    <FileEntry Name="mdrvlrh.651.log" Filter="1" />
+    <FileEntry Name="mdrvp8z.103.log" Filter="1" />
+    <FileEntry Name="mdrvR8B.77.log" Filter="1" />
+    <FileEntry Name="mdrvTF7.411.log" Filter="1" />
+    <FileEntry Name="mdrvx2W.143.log" Filter="1" />
+    <FileEntry Name="mdrvYU0.75.log" Filter="1" />
+    <FileEntry Name="mdrvzBC.273.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="TestCaseConfig.class" Filter="1" />
+    <FileEntry Name="TestCaseValidater.class" Filter="1" />
+    <FileEntry Name="TestCreat.class" Filter="1" />
+    <FileEntry Name="TestGetPod.class" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="vuser_end.c" Filter="1" />
+    <FileEntry Name="vuser_init.c" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

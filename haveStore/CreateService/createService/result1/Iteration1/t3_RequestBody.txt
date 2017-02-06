@@ -1,0 +1,6 @@
+"{"app":"creatservice","rcnum":1,"ver":"1.9.14-alpine","node":{"image":"prod.internal.natureclo"
+"ud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":["
+"],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isSh"
+"ared":true,"mountTargetPath":"/creat","mountObj":{"name":"creat","volumeId":"kidfanjun-creat","
+""namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_"
+"id":"586fb7dcc016a0000e25cdc8"}}]}}"

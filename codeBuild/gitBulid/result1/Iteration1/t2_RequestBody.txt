@@ -1,0 +1,6 @@
+"{"id": "samplegit","gitPath": "https://github.com/RedScarfFish/sample.git","user": "kidfanjun""
+","buildContext": "","repoName": "samplegit","name": "sample","full_name": "RedScarfFish/sample"
+"","description": null,"git_url": "git://github.com/RedScarfFish/sample.git","ssh_url": "git@gi"
+"thub.com:RedScarfFish/sample.git","clone_url": "https://github.com/RedScarfFish/sample.git","t"
+"ags_url": "https://api.github.com/repos/RedScarfFish/sample/tags","private": false,"type": "gi"
+"thub"}"

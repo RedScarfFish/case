@@ -1,0 +1,13 @@
+[t10]
+SnapshotXmlFile=snapshot_10.xml
+ContentType=DummyContentType
+StepName=Custom Request: deleteJob
+Total=1
+FileName1=t10.UNK
+RequestHeaderFile=t10_RequestHeader.txt
+ResponseHeaderFile=t10_ResponseHeader.txt
+RawStepEndTime=1484707082451
+RawStepName=deleteJob
+RequestBodyFile=t10_RequestBody.txt
+RawStepStartTime=1484707081770
+URL1=file:

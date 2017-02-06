@@ -1,0 +1,13 @@
+[t11]
+SnapshotXmlFile=snapshot_11.xml
+ContentType=DummyContentType
+StepName=Custom Request: checkResourceQuotas
+Total=1
+FileName1=t11.UNK
+RequestHeaderFile=t11_RequestHeader.txt
+ResponseHeaderFile=t11_ResponseHeader.txt
+RawStepEndTime=1484044422215
+RawStepName=checkResourceQuotas
+RequestBodyFile=t11_RequestBody.txt
+RawStepStartTime=1484044422184
+URL1=http://ppe.naturecloud.io:88/apiApplication/checkResourceQuotas

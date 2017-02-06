@@ -1,0 +1,1 @@
+"{"user":"kidfanjun","id":"sample","tag":"1.6","type":"bitbucket"}"

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>extendVolume</ScriptName>
+  <Protocol>Java over HTTP</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.java" Filter="2" />
+    <FileEntry Name="Actions.java" Filter="2" />
+    <FileEntry Name="vuser_end.java" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="extendVolume.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="extendVolume.prm" Filter="2" />
+    <FileEntry Name="TestGetPod.java" Filter="2" />
+    <FileEntry Name="config.properties" Filter="2" />
+    <FileEntry Name="TestVolumeStatus.java" Filter="2" />
+    <FileEntry Name="TestVolume.java" Filter="2" />
+    <FileEntry Name="Json.java" Filter="2" />
+    <FileEntry Name="testcase_notshare.properties" Filter="2" />
+    <FileEntry Name="TestCreat.java" Filter="2" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="2" />
+    <FileEntry Name="Bookmarks.xml" Filter="2" />
+    <FileEntry Name="Breakpoints.xml" Filter="2" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="2" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="2" />
+    <FileEntry Name="UserTasks.xml" Filter="2" />
+    <FileEntry Name="url.dat" Filter="2" />
+    <FileEntry Name="16169167844.idx" Filter="1" />
+    <FileEntry Name="Action.c" Filter="1" />
+    <FileEntry Name="Actions$1.class" Filter="1" />
+    <FileEntry Name="Actions.class" Filter="1" />
+    <FileEntry Name="Actions.java.bak" Filter="1" />
+    <FileEntry Name="Actions.java.sed" Filter="1" />
+    <FileEntry Name="Compare.class" Filter="1" />
+    <FileEntry Name="extendVolume.prm.bak" Filter="1" />
+    <FileEntry Name="extendVolume.sdf" Filter="1" />
+    <FileEntry Name="Json.class" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv0Ga.171.log" Filter="1" />
+    <FileEntry Name="mdrv0iu.223.log" Filter="1" />
+    <FileEntry Name="mdrv0J8.501.log" Filter="1" />
+    <FileEntry Name="mdrv1wJ.261.log" Filter="1" />
+    <FileEntry Name="mdrv8ui.777.log" Filter="1" />
+    <FileEntry Name="mdrvBSz.883.log" Filter="1" />
+    <FileEntry Name="mdrvdb8.79.log" Filter="1" />
+    <FileEntry Name="mdrvdEw.301.log" Filter="1" />
+    <FileEntry Name="mdrve4W.487.log" Filter="1" />
+    <FileEntry Name="mdrvFji.873.log" Filter="1" />
+    <FileEntry Name="mdrvh06.827.log" Filter="1" />
+    <FileEntry Name="mdrvhly.919.log" Filter="1" />
+    <FileEntry Name="mdrvHtx.243.log" Filter="1" />
+    <FileEntry Name="mdrvHuf.619.log" Filter="1" />
+    <FileEntry Name="mdrviBI.251.log" Filter="1" />
+    <FileEntry Name="mdrvjdX.3.log" Filter="1" />
+    <FileEntry Name="mdrvL9V.869.log" Filter="1" />
+    <FileEntry Name="mdrvmsp.885.log" Filter="1" />
+    <FileEntry Name="mdrvNHK.769.log" Filter="1" />
+    <FileEntry Name="mdrvPvx.517.log" Filter="1" />
+    <FileEntry Name="mdrvsFg.463.log" Filter="1" />
+    <FileEntry Name="mdrvsgv.657.log" Filter="1" />
+    <FileEntry Name="mdrvtKg.933.log" Filter="1" />
+    <FileEntry Name="mdrvuug.117.log" Filter="1" />
+    <FileEntry Name="mdrvVIS.521.log" Filter="1" />
+    <FileEntry Name="mdrvY9s.547.log" Filter="1" />
+    <FileEntry Name="mdrvYLB.709.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="TestCaseConfig.class" Filter="1" />
+    <FileEntry Name="TestCaseValidater.class" Filter="1" />
+    <FileEntry Name="TestCreat.class" Filter="1" />
+    <FileEntry Name="TestGetPod.class" Filter="1" />
+    <FileEntry Name="TestVolume.class" Filter="1" />
+    <FileEntry Name="TestVolumeStatus.class" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="vuser_end.c" Filter="1" />
+    <FileEntry Name="vuser_init.c" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

@@ -1,0 +1,5 @@
+"{"app":"redtest","rcnum":1,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io"
+"/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"cl"
+"usterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":true,"isShared":"
+"true,"type":"hostpath","mountTargetPath":"/test","mountObj":"/data01/nfs-test/redfish"}]},"vol"
+"umeType":"hostPath"}"

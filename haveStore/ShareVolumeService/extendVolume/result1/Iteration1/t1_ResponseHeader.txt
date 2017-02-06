@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Server: nginx/1.8.0
+Date: Wed, 18 Jan 2017 01:53:40 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 256
+Connection: keep-alive
+X-Powered-By: Express
+Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoZW50aWNhdGVkIjp0cnVlLCJoYXNQaG9uZSI6dHJ1ZSwidXNlcm5hbWUiOiJraWRmYW5qdW4iLCJzZWNyZXQiOiJhMmxrWm1GdWFuVnVPakZ4WVhwNGMzY3kiLCJleHAiOjE0ODUzMDkyMjAsImlhdCI6MTQ4NDcwNDQyMH0.YUxDQ0WW5q3cmkolgSjK3jFHQb9Vf3p08KVmsY5Z4u4; Max-Age=604800; Path=/; Expires=Wed, 25 Jan 2017 01:53:40 GMT
+Set-Cookie: username=kidfanjun; Max-Age=604800; Path=/; Expires=Wed, 25 Jan 2017 01:53:40 GMT
+ETag: W/"100-iarSlKBpEZpPBZbjL3HoGg"
+Vary: Accept-Encoding
+

@@ -1,0 +1,13 @@
+[t6]
+SnapshotXmlFile=snapshot_6.xml
+ContentType=DummyContentType
+StepName=Custom Request: getPodStatus02
+Total=1
+FileName1=t6.UNK
+RequestHeaderFile=t6_RequestHeader.txt
+ResponseHeaderFile=t6_ResponseHeader.txt
+RawStepEndTime=1484062741195
+RawStepName=getPodStatus02
+RequestBodyFile=t6_RequestBody.txt
+RawStepStartTime=1484062741169
+URL1=http://ppe.naturecloud.io:88/apiApplication/getPodStatus

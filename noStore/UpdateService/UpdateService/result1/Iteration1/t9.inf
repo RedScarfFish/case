@@ -1,0 +1,13 @@
+[t9]
+SnapshotXmlFile=snapshot_9.xml
+ContentType=DummyContentType
+StepName=Custom Request: deleteApplication
+Total=1
+FileName1=t9.UNK
+RequestHeaderFile=t9_RequestHeader.txt
+ResponseHeaderFile=t9_ResponseHeader.txt
+RawStepEndTime=1484062786520
+RawStepName=deleteApplication
+RequestBodyFile=t9_RequestBody.txt
+RawStepStartTime=1484062786295
+URL1=http://ppe.naturecloud.io:88/apiApplication/deleteApplication

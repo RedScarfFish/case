@@ -1,0 +1,13 @@
+[t6]
+SnapshotXmlFile=snapshot_6.xml
+ContentType=DummyContentType
+StepName=Custom Request: checkResourceQuotas01
+Total=1
+FileName1=t6.UNK
+RequestHeaderFile=t6_RequestHeader.txt
+ResponseHeaderFile=t6_ResponseHeader.txt
+RawStepEndTime=1484704469070
+RawStepName=checkResourceQuotas01
+RequestBodyFile=t6_RequestBody.txt
+RawStepStartTime=1484704469048
+URL1=file:

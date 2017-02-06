@@ -1,0 +1,6 @@
+"{"app":"notsharetoshare","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.nature"
+"cloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env"
+"":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"i"
+"sShared":false,"mountTargetPath":"/loo","mountObj":{"name":"notsharetoshare","volumeId":"kidfa"
+"njun-notsharetoshare","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeN"
+"ame":"","size":1024,"_id":"586f97bbc016a0000e25cb49"}}]}}"

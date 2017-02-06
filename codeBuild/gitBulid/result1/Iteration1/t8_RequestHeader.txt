@@ -1,0 +1,10 @@
+DELETE /api/deleteImage HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Referer: http://ppe.naturecloud.io:88/cp/service
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+Accept: */*
+Connection: Keep-Alive
+Host: ppe.naturecloud.io:88
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoZW50aWNhdGVkIjp0cnVlLCJoYXNQaG9uZSI6dHJ1ZSwidXNlcm5hbWUiOiJraWRmYW5qdW4iLCJzZWNyZXQiOiJhMmxrWm1GdWFuVnVPakZ4WVhwNGMzY3kiLCJleHAiOjE0ODUzMTExMjMsImlhdCI6MTQ4NDcwNjMyM30.rYsxXaj9eiBfTj27UfLo-KTX0NeNGHfC6yxouzcKK-M; username=kidfanjun
+Content-Length: 54
+

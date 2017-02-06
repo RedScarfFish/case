@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>notShareToshare</ScriptName>
+  <Protocol>Java over HTTP</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.java" Filter="2" />
+    <FileEntry Name="Actions.java" Filter="2" />
+    <FileEntry Name="vuser_end.java" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="notShareToshare.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="notShareToshare.prm" Filter="2" />
+    <FileEntry Name="config.properties" Filter="2" />
+    <FileEntry Name="testcase.properties" Filter="2" />
+    <FileEntry Name="Json.java" Filter="2" />
+    <FileEntry Name="TestGetPod.java" Filter="2" />
+    <FileEntry Name="TestCreat.java" Filter="2" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="2" />
+    <FileEntry Name="Bookmarks.xml" Filter="2" />
+    <FileEntry Name="Breakpoints.xml" Filter="2" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="2" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="2" />
+    <FileEntry Name="UserTasks.xml" Filter="2" />
+    <FileEntry Name="url.dat" Filter="2" />
+    <FileEntry Name="23735712644.idx" Filter="1" />
+    <FileEntry Name="Action.c" Filter="1" />
+    <FileEntry Name="Actions$1.class" Filter="1" />
+    <FileEntry Name="Actions.class" Filter="1" />
+    <FileEntry Name="Actions.java.bak" Filter="1" />
+    <FileEntry Name="Actions.java.sed" Filter="1" />
+    <FileEntry Name="Compare.class" Filter="1" />
+    <FileEntry Name="Json.class" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv1GJ.433.log" Filter="1" />
+    <FileEntry Name="mdrv2W9.201.log" Filter="1" />
+    <FileEntry Name="mdrv30H.339.log" Filter="1" />
+    <FileEntry Name="mdrv4dz.973.log" Filter="1" />
+    <FileEntry Name="mdrv5uV.375.log" Filter="1" />
+    <FileEntry Name="mdrv9MX.965.log" Filter="1" />
+    <FileEntry Name="mdrv9PA.443.log" Filter="1" />
+    <FileEntry Name="mdrv9rJ.867.log" Filter="1" />
+    <FileEntry Name="mdrvB3Z.959.log" Filter="1" />
+    <FileEntry Name="mdrvFlq.205.log" Filter="1" />
+    <FileEntry Name="mdrvfwF.33.log" Filter="1" />
+    <FileEntry Name="mdrvJ64.745.log" Filter="1" />
+    <FileEntry Name="mdrvjF2.859.log" Filter="1" />
+    <FileEntry Name="mdrvJmy.277.log" Filter="1" />
+    <FileEntry Name="mdrvjtd.587.log" Filter="1" />
+    <FileEntry Name="mdrvKW6.219.log" Filter="1" />
+    <FileEntry Name="mdrvLdq.689.log" Filter="1" />
+    <FileEntry Name="mdrvlqN.847.log" Filter="1" />
+    <FileEntry Name="mdrvmOM.125.log" Filter="1" />
+    <FileEntry Name="mdrvNJf.723.log" Filter="1" />
+    <FileEntry Name="mdrvNjN.199.log" Filter="1" />
+    <FileEntry Name="mdrvreH.899.log" Filter="1" />
+    <FileEntry Name="mdrvsp2.841.log" Filter="1" />
+    <FileEntry Name="mdrvTAG.635.log" Filter="1" />
+    <FileEntry Name="mdrvUmk.53.log" Filter="1" />
+    <FileEntry Name="mdrvVNe.189.log" Filter="1" />
+    <FileEntry Name="mdrvZ80.395.log" Filter="1" />
+    <FileEntry Name="mdrvzh3.129.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="notShareToshare.prm.bak" Filter="1" />
+    <FileEntry Name="notShareToshare.sdf" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="TestCaseConfig.class" Filter="1" />
+    <FileEntry Name="TestCaseValidater.class" Filter="1" />
+    <FileEntry Name="TestCreat.class" Filter="1" />
+    <FileEntry Name="TestGetPod.class" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="vuser_end.c" Filter="1" />
+    <FileEntry Name="vuser_init.c" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

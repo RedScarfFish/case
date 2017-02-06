@@ -1,0 +1,13 @@
+[t2]
+SnapshotXmlFile=snapshot_2.xml
+ContentType=DummyContentType
+StepName=Custom Request: createservice
+Total=1
+FileName1=t2.UNK
+RequestHeaderFile=t2_RequestHeader.txt
+ResponseHeaderFile=t2_ResponseHeader.txt
+RawStepEndTime=1484044241885
+RawStepName=createservice
+RequestBodyFile=t2_RequestBody.txt
+RawStepStartTime=1484044241773
+URL1=http://ppe.naturecloud.io:88/apiApplication/createApplication

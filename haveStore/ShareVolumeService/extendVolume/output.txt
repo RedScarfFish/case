@@ -1,0 +1,212 @@
+Virtual User Script started at : 2017/1/18 9:53:40
+Starting action vuser_init.
+Warning! Web support not loaded: check Java-Interpreter -> UtilityExt property in mdrv.dat file
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+web_custom_request("authenticate") was successful, 256 body bytes, 680 header bytes  	[MsgId: MMSG-26386]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Run-Time Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Maximum number of concurrent connections per server: 4  	[MsgId: MMSG-26989]
+Starting action Actions.
+Notify: Transaction "shareVolumeService" set.
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]createstorage
+[DEBUG]URL=http://{url}/apiStorage/createstorage
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"sid":"extendvolume"}
+[DEBUG]LAST
+web_custom_request("createstorage") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiStorage/createstorage"  	[MsgId: MMSG-26548]
+web_custom_request("createstorage") was successful, 196 body bytes, 252 header bytes  	[MsgId: MMSG-26386]
+System.out: order:{0}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]createservice
+[DEBUG]URL=http://{url}/apiApplication/createApplication
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"extendvolume","rcnum":1,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d"}}]}}
+[DEBUG]LAST
+web_custom_request("createservice") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/createApplication"  	[MsgId: MMSG-26548]
+web_custom_request("createservice") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: true,create is success                                                                                                                                                      Notify:
+System.out: order:{1}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]getPodStatus00
+[DEBUG]URL=http://{url}/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"extendvolume","rcnum":1,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","mountAppNameArray":["extendvolume"]},"isStateful":true,"mountArray":[{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","pv":"extend-extendvolume-0","pvc":"extend-extendvolume-0"}]}],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"username":"kidfanjun","id":"extendvolume","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"extendvolume","labels":{"app":"extendvolume"}},"spec":{"selector":{"app":"extendvolume"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":22,"targetPort":22}],"clusterIP":"None"}},"totalStatue":"starting","petset":{"apiVersion":"apps/v1alpha1","kind":"PetSet","metadata":{"name":"extendvolume","labels":{"app":"extendvolume","version":"1.9.14-alpine"}},"spec":{"serviceName":"extendvolume","replicas":1,"template":{"metadata":{"labels":{"app":"extendvolume","version":"1.9.14-alpine"},"annotations":{}},"spec":{"terminationGracePeriodSeconds":5,"restartPolicy":null,"containers":[{"name":"extendvolume","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[],"volumeMounts":[{"mountPath":"/extend","name":"extend"}]}]}},"volumeClaimTemplates":[{"metadata":{"name":"extend"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"1Gi"}}}}]}},"_id":"58709c69c016a0000e25ef34"}
+[DEBUG]LAST
+web_custom_request("getPodStatus00") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/getPodStatus"  	[MsgId: MMSG-26548]
+web_custom_request("getPodStatus00") was successful, 2588 body bytes, 254 header bytes  	[MsgId: MMSG-26386]
+System.out: order:{2}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]getPodStatus_10
+[DEBUG]URL=http://{url}/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"extendvolume","rcnum":1,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","mountAppNameArray":["extendvolume"]},"isStateful":true,"mountArray":[{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","pv":"extend-extendvolume-0","pvc":"extend-extendvolume-0"}]}],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"username":"kidfanjun","id":"extendvolume","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"extendvolume","labels":{"app":"extendvolume"}},"spec":{"selector":{"app":"extendvolume"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":22,"targetPort":22}],"clusterIP":"None"}},"totalStatue":"starting","petset":{"apiVersion":"apps/v1alpha1","kind":"PetSet","metadata":{"name":"extendvolume","labels":{"app":"extendvolume","version":"1.9.14-alpine"}},"spec":{"serviceName":"extendvolume","replicas":1,"template":{"metadata":{"labels":{"app":"extendvolume","version":"1.9.14-alpine"},"annotations":{}},"spec":{"terminationGracePeriodSeconds":5,"restartPolicy":null,"containers":[{"name":"extendvolume","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[],"volumeMounts":[{"mountPath":"/extend","name":"extend"}]}]}},"volumeClaimTemplates":[{"metadata":{"name":"extend"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"1Gi"}}}}]}},"_id":"58709c69c016a0000e25ef34"}
+[DEBUG]LAST
+web_custom_request("getPodStatus_10") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/getPodStatus"  	[MsgId: MMSG-26548]
+web_custom_request("getPodStatus_10") was successful, 2588 body bytes, 254 header bytes  	[MsgId: MMSG-26386]
+System.out: order:{3}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]checkResourceQuotas01
+[DEBUG]URL=http://{url}/apiApplication/checkResourceQuotas
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"data":{"_id":"58709c69c016a0000e25ef34","app":"extendvolume","id":"extendvolume","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","mountAppNameArray":["extendvolume"]},"isStateful":true,"mountArray":[{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","pv":"extend-extendvolume-0","pvc":"extend-extendvolume-0"}]}],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"petset":{"apiVersion":"apps/v1alpha1","kind":"PetSet","metadata":{"name":"extendvolume","labels":{"app":"extendvolume","version":"1.9.14-alpine"}},"spec":{"serviceName":"extendvolume","replicas":1,"template":{"metadata":{"labels":{"app":"extendvolume","version":"1.9.14-alpine"},"annotations":{}},"spec":{"terminationGracePeriodSeconds":5,"restartPolicy":null,"containers":[{"name":"extendvolume","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[],"volumeMounts":[{"mountPath":"/extend","name":"extend"}]}]}},"volumeClaimTemplates":[{"metadata":{"name":"extend"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"1Gi"}}}}]}},"rcnum":1,"service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"extendvolume","labels":{"app":"extendvolume"}},"spec":{"selector":{"app":"extendvolume"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":22,"targetPort":22}],"clusterIP":"None"}},"totalStatue":"running","username":"kidfanjun","ver":"1.9.14-alpine"},"status":"running","replicas":2,"op":"modifyReplicas"}
+[DEBUG]LAST
+web_custom_request("checkResourceQuotas01") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/checkResourceQuotas"  	[MsgId: MMSG-26548]
+web_custom_request("checkResourceQuotas01") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: order:{5}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]modifyRc_1
+[DEBUG]URL=http://{url}/apiApplication/modifyRc
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"data":{"app":"extendvolume","id":"extendvolume","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","mountAppNameArray":["extendvolume"]},"isStateful":true,"mountArray":[{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","pv":"extend-extendvolume-0","pvc":"extend-extendvolume-0"}]}],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"petset":{"apiVersion":"apps/v1alpha1","kind":"PetSet","metadata":{"name":"extendvolume","labels":{"app":"extendvolume","version":"1.9.14-alpine"}},"spec":{"serviceName":"extendvolume","replicas":1,"template":{"metadata":{"labels":{"app":"extendvolume","version":"1.9.14-alpine"},"annotations":{}},"spec":{"terminationGracePeriodSeconds":5,"restartPolicy":null,"containers":[{"name":"extendvolume","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[],"volumeMounts":[{"mountPath":"/extend","name":"extend"}]}]}},"volumeClaimTemplates":[{"metadata":{"name":"extend"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"1Gi"}}}}]}},"rcnum":1,"service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"extendvolume","labels":{"app":"extendvolume"}},"spec":{"selector":{"app":"extendvolume"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":22,"targetPort":22}],"clusterIP":"None"}},"totalStatue":"running","username":"kidfanjun","ver":"1.9.14-alpine"},"status":"running","replicas":2,"op":"modifyReplicas","limitCheck":"yes"}
+[DEBUG]LAST
+web_custom_request("modifyRc_1") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/modifyRc"  	[MsgId: MMSG-26548]
+web_custom_request("modifyRc_1") was successful, 2240 body bytes, 254 header bytes  	[MsgId: MMSG-26386]
+System.out: order:{5}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]getPodStatus_11
+[DEBUG]URL=http://{url}/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"_id":"58709c69c016a0000e25ef34","app":"extendvolume","id":"extendvolume","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","mountAppNameArray":["extendvolume","extendvolume"]},"isStateful":true,"mountArray":[{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","pv":"extend-extendvolume-0","pvc":"extend-extendvolume-0"},{"name":"extendvolume-1","volumeId":"kidfanjun-extendvolume-1","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709cbcc016a0000e25ef47","pv":"extend-extendvolume-1","pvc":"extend-extendvolume-1"}]}],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"petset":{"apiVersion":"apps/v1alpha1","kind":"PetSet","metadata":{"name":"extendvolume","labels":{"app":"extendvolume","version":"1.9.14-alpine"}},"spec":{"serviceName":"extendvolume","replicas":2,"template":{"metadata":{"labels":{"app":"extendvolume","version":"1.9.14-alpine"},"annotations":{}},"spec":{"terminationGracePeriodSeconds":5,"restartPolicy":null,"containers":[{"name":"extendvolume","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[],"volumeMounts":[{"mountPath":"/extend","name":"extend"}]}]}},"volumeClaimTemplates":[{"metadata":{"name":"extend"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"1Gi"}}}}]}},"rcnum":2,"service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"extendvolume","labels":{"app":"extendvolume"}},"spec":{"selector":{"app":"extendvolume"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":22,"targetPort":22}],"clusterIP":"None"}},"totalStatue":"scaling","username":"kidfanjun","ver":"1.9.14-alpine"}
+[DEBUG]LAST
+web_custom_request("getPodStatus_11") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/getPodStatus"  	[MsgId: MMSG-26548]
+web_custom_request("getPodStatus_11") was successful, 4328 body bytes, 255 header bytes  	[MsgId: MMSG-26386]
+System.out: order:{6}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:                                                                                                                                                      Notify:
+[DEBUG]getPodStatus_12
+[DEBUG]URL=http://{url}/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"_id":"58709c69c016a0000e25ef34","app":"extendvolume","id":"extendvolume","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","mountAppNameArray":["extendvolume","extendvolume"]},"isStateful":true,"mountArray":[{"name":"extendvolume","volumeId":"kidfanjun-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709c21c016a0000e25ef1d","pv":"extend-extendvolume-0","pvc":"extend-extendvolume-0"},{"name":"extendvolume-1","volumeId":"kidfanjun-extendvolume-1","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1024,"_id":"58709cbcc016a0000e25ef47","pv":"extend-extendvolume-1","pvc":"extend-extendvolume-1"}]}],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"petset":{"apiVersion":"apps/v1alpha1","kind":"PetSet","metadata":{"name":"extendvolume","labels":{"app":"extendvolume","version":"1.9.14-alpine"}},"spec":{"serviceName":"extendvolume","replicas":2,"template":{"metadata":{"labels":{"app":"extendvolume","version":"1.9.14-alpine"},"annotations":{}},"spec":{"terminationGracePeriodSeconds":5,"restartPolicy":null,"containers":[{"name":"extendvolume","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[],"volumeMounts":[{"mountPath":"/extend","name":"extend"}]}]}},"volumeClaimTemplates":[{"metadata":{"name":"extend"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"1Gi"}}}}]}},"rcnum":2,"service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"extendvolume","labels":{"app":"extendvolume"}},"spec":{"selector":{"app":"extendvolume"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":22,"targetPort":22}],"clusterIP":"None"}},"totalStatue":"scaling","username":"kidfanjun","ver":"1.9.14-alpine"}
+[DEBUG]LAST
+web_custom_request("getPodStatus_12") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/getPodStatus"  	[MsgId: MMSG-26548]
+web_custom_request("getPodStatus_12") was successful, 4328 body bytes, 255 header bytes  	[MsgId: MMSG-26386]
+System.out: this is 1 item's volume:{"name":"extend","persistentVolumeClaim":{"claimName":"extend-extendvolume-0"}}                                                                                                                                                      Notify:
+System.out: status is Running                                                                                                                                                      Notify:
+System.out: this is 2 item's volume:{"name":"extend","persistentVolumeClaim":{"claimName":"extend-extendvolume-1"}}                                                                                                                                                      Notify:
+Error: service not running
+System.out: items is 2                                                                                                                                                      Notify:
+System.out: case list                                                                                                                                                      Notify:
+Notify: Transaction "shareVolumeService" set.
+System.out:                                                                                                                                                        Notify:
+System.out:                                                                                                                                                        Notify:
+System.out: -------statics-------                                                                                                                                                      Notify:
+System.out: Scene:shareVolumeService failed ->Case getPodStatus_12 failed                                                                                                                                                      Notify:
+System.out: -1                                                                                                                                                      Notify:
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

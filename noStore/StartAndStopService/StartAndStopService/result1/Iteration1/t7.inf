@@ -1,0 +1,13 @@
+[t7]
+SnapshotXmlFile=snapshot_7.xml
+ContentType=DummyContentType
+StepName=Custom Request: updateAppStatus02
+Total=1
+FileName1=t7.UNK
+RequestHeaderFile=t7_RequestHeader.txt
+ResponseHeaderFile=t7_ResponseHeader.txt
+RawStepEndTime=1484044337130
+RawStepName=updateAppStatus02
+RequestBodyFile=t7_RequestBody.txt
+RawStepStartTime=1484044337090
+URL1=http://ppe.naturecloud.io:88/apiApplication/updateAppStatus

@@ -1,0 +1,72 @@
+Notify: Found jdk version: 1.6.0.	[MsgId: MMSG-22986]
+Notify: classpath=C:\naturecloud\lb_scripts_new\java\noStore\ScaleService\scaleService_shrink;c:\program files (x86)\hp\loadrunner\classes\srv;c:\program files (x86)\hp\loadrunner\classes;;C:\naturecloud\lb_scripts_new\lib\gson-2.8.0.jar;C:\naturecloud\lb_scripts_new\lib\commons-net-3.5.jar;;;c:\program files (x86)\hp\loadrunner\lib\xstream-1.4.8.jar;c:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar	[MsgId: MMSG-22986]
+Notify: Path=c:\jdk1.6.0_45\jre\bin\client;C:\PROGRA~2\HP\LOADRU~1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseGit\bin;c:\jdk1.6.0_45\bin;C:\jdk1.6.0_45\jre\bin;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin	[MsgId: MMSG-22986]
+Notify: VM Params: .	[MsgId: MMSG-22986]
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+    ],"hostIP":"192.168.10.6","startTime":"2017-01-11T04:18:56Z","containerStatuses":[{"name":
+    "scaleserviceshrink00","state":{"waiting":{"reason":"ContainerCreating"}},"lastState":{},"
+    ready":false,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-a
+    lpine","imageID":""}]}}]}}
+Notify: Saving Parameter "ResponseBody = true".	[MsgId: MMSG-13798]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/getPodStatus"  	[MsgId: MMSG-26548]
+Notify: Message id [-13798] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+web_custom_request("getPodStatus01") was successful, 4997 body bytes, 255 header bytes  	[MsgId: MMSG-26386]
+Notify: Parameter Substitution: parameter "ResponseBody" =  "true"	[MsgId: MMSG-13992]
+Notify: Message id [-13992] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Message id [-17999] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Error: error:"containers with unready status: [scaleserviceshrink00]";reson:null	[MsgId: MERR-17999]
+Error: error:"containers with unready status: [scaleserviceshrink00]";reson:null	[MsgId: MERR-17999]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+    ],"hostIP":"192.168.10.6","startTime":"2017-01-11T04:18:56Z","containerStatuses":[{"name":
+    "scaleserviceshrink25","state":{"waiting":{"reason":"ContainerCreating"}},"lastState":{},"
+    ready":false,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-a
+    lpine","imageID":""}]}}]}}
+Notify: Saving Parameter "ResponseBody = true".	[MsgId: MMSG-13798]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/getPodStatus"  	[MsgId: MMSG-26548]
+Notify: Message id [-13798] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+web_custom_request("getPodStatus01") was successful, 4997 body bytes, 255 header bytes  	[MsgId: MMSG-26386]
+Notify: Parameter Substitution: parameter "ResponseBody" =  "true"	[MsgId: MMSG-13992]
+Notify: Message id [-13992] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Message id [-17999] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Error: error:"containers with unready status: [scaleserviceshrink25]";reson:null	[MsgId: MERR-17999]
+Error: error:"containers with unready status: [scaleserviceshrink25]";reson:null	[MsgId: MERR-17999]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+    ],"hostIP":"192.168.10.6","startTime":"2017-01-11T04:19:36Z","containerStatuses":[{"name":
+    "scaleserviceshrink26","state":{"waiting":{"reason":"ContainerCreating"}},"lastState":{},"
+    ready":false,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-a
+    lpine","imageID":""}]}}]}}
+Notify: Saving Parameter "ResponseBody = true".	[MsgId: MMSG-13798]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiApplication/getPodStatus"  	[MsgId: MMSG-26548]
+Notify: Message id [-13798] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+web_custom_request("getPodStatus01") was successful, 4997 body bytes, 255 header bytes  	[MsgId: MMSG-26386]
+Notify: Parameter Substitution: parameter "ResponseBody" =  "true"	[MsgId: MMSG-13992]
+Notify: Message id [-13992] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Message id [-17999] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Error: error:"containers with unready status: [scaleserviceshrink26]";reson:null	[MsgId: MERR-17999]
+Error: error:"containers with unready status: [scaleserviceshrink26]";reson:null	[MsgId: MERR-17999]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 3.	[MsgId: MMSG-10545]
+    ontainersNotReady","message":"containers with unready status: [scaleserviceshrink27]"},{"t
+    ype":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-11T
+    04:20:17Z"}],"hostIP":"192.168.10.6","startTime":"2017-01-11T04:20:17Z","containerStatuses
+    ":[{"name":"scaleserviceshrink27","state":{"waiting":{"reason":"ContainerCreating"}},"last
+    State":{},"ready":false,"restartCount":0,"image":"prod.internal.naturecloud.io/library/ngi
+    nx:1.9.14-alpine","imageID":""}]}}]}}
+Notify: Message id [-13798] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+web_custom_request("getPodStatus01") was successful, 4997 body bytes, 255 header bytes  	[MsgId: MMSG-26386]
+Notify: Parameter Substitution: parameter "ResponseBody" =  "true"	[MsgId: MMSG-13992]
+Notify: Message id [-13992] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Message id [-17999] was not saved - Auto Log cache is too small to contain the message.	[MsgId: MMSG-10547]
+Error: error:"containers with unready status: [scaleserviceshrink27]";reson:null	[MsgId: MERR-17999]
+Error: error:"containers with unready status: [scaleserviceshrink27]";reson:null	[MsgId: MERR-17999]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

@@ -1,0 +1,51 @@
+Notify: Found jdk version: 1.6.0.
+Notify: classpath=C:\naturecloud\lb_scripts_new\java\codeBuild\testdisk\;c:\program files (x86)\hp\loadrunner\classes\srv;c:\program files (x86)\hp\loadrunner\classes;;C:\naturecloud\lb_scripts_new\lib\gson-2.8.0.jar;C:\naturecloud\lb_scripts_new\lib\commons-net-3.5.jar;;;c:\program files (x86)\hp\loadrunner\lib\xstream-1.4.8.jar;c:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar
+Notify: Path=c:\jdk1.6.0_45\jre\bin\client;C:\Program Files (x86)\HP\LoadRunner\bin\NativeBinaries\x86;C:\Program Files (x86)\HP\LoadRunner\Bin;C:\Program Files (x86)\HP\LoadRunner\Bin\tulip\bin;C:\PROGRA~2\HP\LOADRU~1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseGit\bin;c:\jdk1.6.0_45\bin;C:\jdk1.6.0_45\jre\bin;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin
+Notify: VM Params: .
+Virtual User Script started at : 2017/1/16 9:37:31
+Starting action vuser_init.
+Warning! Web support not loaded: check Java-Interpreter -> UtilityExt property in mdrv.dat file
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+web_custom_request("authenticate") was successful, 256 body bytes, 680 header bytes  	[MsgId: MMSG-26386]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Run-Time Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Maximum number of concurrent connections per server: 4  	[MsgId: MMSG-26989]
+Starting action Actions.
+Notify: Transaction "shareVolumeService" set.
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+System.out: method:get                                                                                                                                                      Notify:
+[DEBUG]getStorages04
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiStorage/getstorages
+[DEBUG]options:
+[DEBUG]Method=GET
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t99.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]LAST
+web_custom_request("getStorages04") started  	[MsgId: MMSG-26355]
+HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ppe.naturecloud.io:88/apiStorage/getstorages"  	[MsgId: MMSG-26548]
+web_custom_request("getStorages04") was successful, 3233 body bytes, 254 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":"","data":[{"_id":"587a1be076d570000ea60615","mountAppName":"","mountAppNameArray":[],"mountNodeName":"","name":"sharetest-1","namespace":"kidfanjun","size":1024,"volumeId":"kidfanjun-sharetest-1"},{"_id":"586b3ed44faa5c000e64fc37","mountAppName":"","mountAppNameArray":["sharetest01"],"mountNodeName":"","name":"d0b2cf48c7c828531aaf1172","namespace":"kidfanjun","size":1024,"status":"NOT_USE","volumeId":"kidfanjun-d0b2cf48c7c828531aaf1172"},{"_id":"586b46824faa5c000e64fc49","mountAppName":"","mountAppNameArray":["sharetest01"],"mountNodeName":"","name":"f63036341fa3c923081c6292","namespace":"kidfanjun","size":1024,"status":"NOT_USE","volumeId":"kidfanjun-f63036341fa3c923081c6292"},{"_id":"586b50ba0fa21a000e7029f5","mountAppName":"","mountAppNameArray":["sharetest01"],"mountNodeName":"","name":"gd8abeba1c01926543ebdd10","namespace":"kidfanjun","size":1024,"status":"NOT_USE","volumeId":"kidfanjun-gd8abeba1c01926543ebdd10"},{"_id":"586b51b30fa21a000e7029f9","mountAppName":"","mountAppNameArray":["sharetest01"],"mountNodeName":"","name":"p79f324c006eae5a72e1c099","namespace":"kidfanjun","size":1024,"status":"NOT_USE","volumeId":"kidfanjun-p79f324c006eae5a72e1c099"},{"_id":"586b53400fa21a000e702a01","mountAppName":"","mountAppNameArray":["sharetest01"],"mountNodeName":"","name":"ncec6449487fdfe80ebd2ddf","namespace":"kidfanjun","size":1024,"status":"NOT_USE","volumeId":"kidfanjun-ncec6449487fdfe80ebd2ddf"},{"_id":"5870ecfe4f202d000eb30dc0","mountAppName":"","mountAppNameArray":["redfishtest"],"mountNodeName":"","name":"redfishtest-testop-1","namespace":"kidfanjun","size":1024,"status":"NOT_USE","volumeId":"kidfanjun-redfishtest-testop-1"},{"_id":"5870ed054f202d000eb30dc4","mountAppName":"","mountAppNameArray":["redfishtest"],"mountNodeName":"","name":"redfishtest-testop-0","namespace":"kidfanjun","size":1024,"status":"NOT_USE","volumeId":"kidfanjun-redfishtest-testop-0"},{"_id":"587a19f476d570000ea605e4","mountAppName":"","mountAppNameArray":[],"mountNodeName":"","name":"notsharetoshare-1","namespace":"kidfanjun","size":1024,"volumeId":"kidfanjun-notsharetoshare-1"},{"_id":"587a347f76d570000ea60b9e","mountAppName":"","mountAppNameArray":["notsharevolume"],"mountNodeName":"","name":"notshare","namespace":"kidfanjun","size":1024,"volumeId":"kidfanjun-notshare"},{"_id":"587a348d76d570000ea60ba1","mountAppName":"","mountAppNameArray":["notsharevolume"],"mountNodeName":"","name":"notshare-1","namespace":"kidfanjun","size":1024,"volumeId":"kidfanjun-notshare-1"},{"name":"notsharetoshare","volumeId":"kidfanjun-notsharetoshare","namespace":"kidfanjun","mountAppName":"","mountNodeName":"","size":1024,"_id":"587a661276d570000ea614ff"},{"_id":"587a997076d570000ea61d4b","mountAppName":"","mountAppNameArray":["redshare"],"mountNodeName":"","name":"sharevolume","namespace":"kidfanjun","size":1024,"volumeId":"kidfanjun-sharevolume"},{"_id":"587a997676d570000ea61d4c","mountAppName":"","mountAppNameArray":["creatservice"],"mountNodeName":"","name":"creat","namespace":"kidfanjun","size":1024,"volumeId":"kidfanjun-creat"},{"name":"sharetest","volumeId":"kidfanjun-sharetest","namespace":"kidfanjun","mountAppName":"","mountNodeName":"","size":1024,"_id":"587abc8876d570000ea61f02"}]}                                                                                                                                                      Notify:
+System.out: order:{17}                                                                                                                                                      Notify:
+Notify: Transaction "shareVolumeService" set.
+System.out: Scene shareVolumeService pass ...                                                                                                                                                      Notify:
+System.out:                                                                                                                                                        Notify:
+System.out:                                                                                                                                                        Notify:
+System.out: -------statics-------                                                                                                                                                      Notify:
+System.out: Scene:shareVolumeService succeed                                                                                                                                                      Notify:
+System.out: 0                                                                                                                                                      Notify:
+Ending action Actions.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

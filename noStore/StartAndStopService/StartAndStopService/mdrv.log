@@ -1,0 +1,373 @@
+Notify: Found jdk version: 1.6.0.
+Notify: classpath=C:\naturecloud\lb_scripts_new\java\noStore\StartAndStopService\StartAndStopService\;c:\program files (x86)\hp\loadrunner\classes\srv;c:\program files (x86)\hp\loadrunner\classes;;C:\naturecloud\lb_scripts_new\lib\gson-2.8.0.jar;C:\naturecloud\lb_scripts_new\lib\commons-net-3.5.jar;;;c:\program files (x86)\hp\loadrunner\lib\xstream-1.4.8.jar;c:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar
+Notify: Path=c:\jdk1.6.0_45\jre\bin\client;C:\Program Files (x86)\HP\LoadRunner\bin\NativeBinaries\x86;C:\Program Files (x86)\HP\LoadRunner\Bin;C:\Program Files (x86)\HP\LoadRunner\Bin\tulip\bin;C:\PROGRA~2\HP\LOADRU~1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseGit\bin;c:\jdk1.6.0_45\bin;C:\jdk1.6.0_45\jre\bin;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin
+Notify: VM Params: .
+Virtual User Script started at : 2017/1/10 18:30:41
+Starting action vuser_init.
+Warning! Web support not loaded: check Java-Interpreter -> UtilityExt property in mdrv.dat file
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+web_custom_request("authenticate") was successful, 256 body bytes, 680 header bytes  	[MsgId: MMSG-26386]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Run-Time Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Maximum number of concurrent connections per server: 4  	[MsgId: MMSG-26989]
+Starting action Actions.
+Notify: Transaction "opearteservice" set.
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]createservice
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/createApplication
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[]},"volumeType":"hostPath"}
+[DEBUG]LAST
+web_custom_request("createservice") started  	[MsgId: MMSG-26355]
+web_custom_request("createservice") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":null}                                                                                                                                                      Notify:
+System.out: true                                                                                                                                                      Notify:
+System.out: order:{0}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]getPodStatus00
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"starting","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"}
+[DEBUG]LAST
+web_custom_request("getPodStatus00") started  	[MsgId: MMSG-26355]
+web_custom_request("getPodStatus00") was successful, 1180 body bytes, 285 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+System.out: this{"ret":true,"error":null,"data":{"kind":"PodList","apiVersion":"v1","metadata":{"selfLink":"/api/v1/namespaces/kidfanjun/pods","resourceVersion":"8523501"},"items":[{"metadata":{"name":"startandstop00-v1.9.14-alpine-9yoy9","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-9yoy9","uid":"d6228822-d71f-11e6-bfbd-00163e02bcc9","resourceVersion":"8523328","creationTimestamp":"2017-01-10T10:30:41Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8523212\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.5","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:50Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"}],"hostIP":"192.168.10.5","podIP":"172.16.100.8","startTime":"2017-01-10T10:30:41Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:30:50Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://1a4797ab5975ce272e7ba98c539e41469a166f81df47721a36d360ffbf7c8e59"}]}},{"metadata":{"name":"startandstop00-v1.9.14-alpine-c1hhd","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-c1hhd","uid":"d6249e8b-d71f-11e6-bfbd-00163e02bcc9","resourceVersion":"8523337","creationTimestamp":"2017-01-10T10:30:41Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8523212\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.6","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:51Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"}],"hostIP":"192.168.10.6","podIP":"172.16.83.18","startTime":"2017-01-10T10:30:41Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:30:51Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://8625cd7ad74e4e3e28974d50a69b9808ded42675eb57c370fc3f69b31494e307"}]}}]}}                                                                                                                                                      Notify:
+System.out: order:{1}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]getPodStatus01
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"starting","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"}
+[DEBUG]LAST
+web_custom_request("getPodStatus01") started  	[MsgId: MMSG-26355]
+web_custom_request("getPodStatus01") was successful, 1180 body bytes, 285 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+System.out: this{"ret":true,"error":null,"data":{"kind":"PodList","apiVersion":"v1","metadata":{"selfLink":"/api/v1/namespaces/kidfanjun/pods","resourceVersion":"8523786"},"items":[{"metadata":{"name":"startandstop00-v1.9.14-alpine-9yoy9","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-9yoy9","uid":"d6228822-d71f-11e6-bfbd-00163e02bcc9","resourceVersion":"8523328","creationTimestamp":"2017-01-10T10:30:41Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8523212\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.5","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:50Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"}],"hostIP":"192.168.10.5","podIP":"172.16.100.8","startTime":"2017-01-10T10:30:41Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:30:50Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://1a4797ab5975ce272e7ba98c539e41469a166f81df47721a36d360ffbf7c8e59"}]}},{"metadata":{"name":"startandstop00-v1.9.14-alpine-c1hhd","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-c1hhd","uid":"d6249e8b-d71f-11e6-bfbd-00163e02bcc9","resourceVersion":"8523337","creationTimestamp":"2017-01-10T10:30:41Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8523212\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.6","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:51Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:30:41Z"}],"hostIP":"192.168.10.6","podIP":"172.16.83.18","startTime":"2017-01-10T10:30:41Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:30:51Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://8625cd7ad74e4e3e28974d50a69b9808ded42675eb57c370fc3f69b31494e307"}]}}]}}                                                                                                                                                      Notify:
+System.out: Running                                                                                                                                                      Notify:
+System.out: Running                                                                                                                                                      Notify:
+System.out: itmes number is 2                                                                                                                                                      Notify:
+System.out: order:{2}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]updateAppStatus01
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/updateAppStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"svc":{"app":"{serviceName}","id":"{serviceName}","ver":"1.9.14-alpine","image":"nginx","imageurl":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageversion":"1.9.14-alpine","replicas":2,"limit":{"cpu":"0","memory":"0Mi"},"dbJson":{"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"running","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"},"totalStatue":"running","statusIconClass":"fa-clock-o text-warning","btn_icon":"fa fa-spinner fa-spin","runningNum":2},"status":"running"}
+[DEBUG]LAST
+web_custom_request("updateAppStatus01") started  	[MsgId: MMSG-26355]
+web_custom_request("updateAppStatus01") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":true}                                                                                                                                                      Notify:
+System.out: order:{3}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]modifyRc
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/modifyRc
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"data":{"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"running","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}}},"replicas":0,"limitCheck":"yes"}
+[DEBUG]LAST
+web_custom_request("modifyRc") started  	[MsgId: MMSG-26355]
+web_custom_request("modifyRc") was successful, 653 body bytes, 284 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+System.out: this{"ret":true,"error":"","data":{"app":"startandstop00","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://startandstop00.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"startandstop00","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"startandstop00","labels":{"app":"startandstop00"}},"spec":{"selector":{"app":"startandstop00"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"running","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"startandstop00-v1.9.14-alpine","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":0,"template":{"metadata":{"labels":{"app":"startandstop00","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}}}}                                                                                                                                                      Notify:
+System.out: totalStatue"running"                                                                                                                                                      Notify:
+System.out: stoping                                                                                                                                                      Notify:
+System.out: order:{4}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]updateAppStatus02
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/updateAppStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"svc":{"app":"{serviceName}","id":"{serviceName}","ver":"1.9.14-alpine","image":"nginx","imageurl":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageversion":"1.9.14-alpine","replicas":2,"limit":{"cpu":"0","memory":"0Mi"},"dbJson":{"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"running","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"},"totalStatue":"stoping","statusIconClass":"fa-play-circle text-secondary","btn_icon":"fa-stop","runningNum":2,"btn_title":"¨ª¡ê?1¡¤t??"},"status":"stoping"}
+[DEBUG]LAST
+web_custom_request("updateAppStatus02") started  	[MsgId: MMSG-26355]
+web_custom_request("updateAppStatus02") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":true}                                                                                                                                                      Notify:
+System.out: order:{5}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]getPodStatus02
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"running","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"}
+[DEBUG]LAST
+web_custom_request("getPodStatus02") started  	[MsgId: MMSG-26355]
+web_custom_request("getPodStatus02") was successful, 168 body bytes, 252 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":{"kind":"PodList","apiVersion":"v1","metadata":{"selfLink":"/api/v1/namespaces/kidfanjun/pods","resourceVersion":"8524415"},"items":[]}}                                                                                                                                                      Notify:
+System.out: order:{6}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]getPodStatus03
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"running","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"}
+[DEBUG]LAST
+web_custom_request("getPodStatus03") started  	[MsgId: MMSG-26355]
+web_custom_request("getPodStatus03") was successful, 168 body bytes, 252 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":{"kind":"PodList","apiVersion":"v1","metadata":{"selfLink":"/api/v1/namespaces/kidfanjun/pods","resourceVersion":"8524651"},"items":[]}}                                                                                                                                                      Notify:
+System.out: this items is[]                                                                                                                                                      Notify:
+System.out: item validate stop success                                                                                                                                                      Notify:
+System.out: order:{7}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]updateAppStatus03
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/updateAppStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"svc":{"app":"{serviceName}","id":"{serviceName}","ver":"1.9.14-alpine","image":"nginx","imageurl":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageversion":"1.9.14-alpine","replicas":2,"limit":{"cpu":"0","memory":"0Mi"},"dbJson":{"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"},"totalStatue":"stop","statusIconClass":"fa-clock-o text-warning","btn_icon":"fa fa-spinner fa-spin","runningNum":0,"btn_title":"¨ª¡ê?1¡¤t??"},"status":"stop"}
+[DEBUG]LAST
+web_custom_request("updateAppStatus03") started  	[MsgId: MMSG-26355]
+web_custom_request("updateAppStatus03") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":true}                                                                                                                                                      Notify:
+System.out: order:{8}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]checkResourceQuotas
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/checkResourceQuotas
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"data":{"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"},"status":"running","replicas":2,"op":"start"}
+[DEBUG]LAST
+web_custom_request("checkResourceQuotas") started  	[MsgId: MMSG-26355]
+web_custom_request("checkResourceQuotas") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":true}                                                                                                                                                      Notify:
+System.out: order:{9}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]modifyRc_2
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/modifyRc
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"data":{"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}}},"status":"running","replicas":2,"op":"start","limitCheck":"yes"}
+[DEBUG]LAST
+web_custom_request("modifyRc_2") started  	[MsgId: MMSG-26355]
+web_custom_request("modifyRc_2") was successful, 649 body bytes, 284 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+System.out: this{"ret":true,"error":"","data":{"app":"startandstop00","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://startandstop00.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"startandstop00","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"startandstop00","labels":{"app":"startandstop00"}},"spec":{"selector":{"app":"startandstop00"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"startandstop00-v1.9.14-alpine","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"startandstop00","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}}}}                                                                                                                                                      Notify:
+System.out: modify{"ret":true,"error":"","data":{"app":"startandstop00","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://startandstop00.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"startandstop00","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"startandstop00","labels":{"app":"startandstop00"}},"spec":{"selector":{"app":"startandstop00"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"startandstop00-v1.9.14-alpine","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"startandstop00","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}}}}                                                                                                                                                      Notify:
+System.out: totalStatue"stop"                                                                                                                                                      Notify:
+System.out: starting                                                                                                                                                      Notify:
+System.out: order:{10}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]updateAppStatus04
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/updateAppStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"svc":{"app":"{serviceName}","id":"{serviceName}","ver":"1.9.14-alpine","image":"nginx","imageurl":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageversion":"1.9.14-alpine","replicas":2,"limit":{"cpu":"0","memory":"0Mi"},"dbJson":{"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"},"totalStatue":"starting","statusIconClass":"fa-pause text-muted","btn_icon":"fa-play","runningNum":0,"btn_title":"???¡¥¡¤t??"},"status":"starting"}
+[DEBUG]LAST
+web_custom_request("updateAppStatus04") started  	[MsgId: MMSG-26355]
+web_custom_request("updateAppStatus04") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":true}                                                                                                                                                      Notify:
+System.out: order:{11}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]getPodStatus_10
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"}
+[DEBUG]LAST
+web_custom_request("getPodStatus_10") started  	[MsgId: MMSG-26355]
+web_custom_request("getPodStatus_10") was successful, 1193 body bytes, 285 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+System.out: this{"ret":true,"error":null,"data":{"kind":"PodList","apiVersion":"v1","metadata":{"selfLink":"/api/v1/namespaces/kidfanjun/pods","resourceVersion":"8525685"},"items":[{"metadata":{"name":"startandstop00-v1.9.14-alpine-rgc3w","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-rgc3w","uid":"4a9815e6-d720-11e6-bfbd-00163e02bcc9","resourceVersion":"8525455","creationTimestamp":"2017-01-10T10:33:57Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8525372\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.6","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:34:04Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"}],"hostIP":"192.168.10.6","podIP":"172.16.83.20","startTime":"2017-01-10T10:33:57Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:34:04Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://8fc97b2e7cc5d901a94ad0777e6a6e5cb4368bad675a336225742bd53cfc886f"}]}},{"metadata":{"name":"startandstop00-v1.9.14-alpine-wqf6c","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-wqf6c","uid":"4a974e9e-d720-11e6-bfbd-00163e02bcc9","resourceVersion":"8525647","creationTimestamp":"2017-01-10T10:33:57Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8525372\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.5","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:34:25Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"}],"hostIP":"192.168.10.5","podIP":"172.16.100.21","startTime":"2017-01-10T10:33:57Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:34:25Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://ddcea4f4cf31e51a4b1eec9a30bb7e66089b1af81a0798562ad44fffd523a727"}]}}]}}                                                                                                                                                      Notify:
+System.out: order:{12}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]getPodStatus_11
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/getPodStatus
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"app":"{serviceName}","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"volumeType":"hostPath","username":"kidfanjun","id":"{serviceName}","service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"stop","rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"_id":"5874a684fcbd5e000eec230f"}
+[DEBUG]LAST
+web_custom_request("getPodStatus_11") started  	[MsgId: MMSG-26355]
+web_custom_request("getPodStatus_11") was successful, 1193 body bytes, 285 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+System.out: this{"ret":true,"error":null,"data":{"kind":"PodList","apiVersion":"v1","metadata":{"selfLink":"/api/v1/namespaces/kidfanjun/pods","resourceVersion":"8525870"},"items":[{"metadata":{"name":"startandstop00-v1.9.14-alpine-rgc3w","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-rgc3w","uid":"4a9815e6-d720-11e6-bfbd-00163e02bcc9","resourceVersion":"8525455","creationTimestamp":"2017-01-10T10:33:57Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8525372\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.6","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:34:04Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"}],"hostIP":"192.168.10.6","podIP":"172.16.83.20","startTime":"2017-01-10T10:33:57Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:34:04Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://8fc97b2e7cc5d901a94ad0777e6a6e5cb4368bad675a336225742bd53cfc886f"}]}},{"metadata":{"name":"startandstop00-v1.9.14-alpine-wqf6c","generateName":"startandstop00-v1.9.14-alpine-","namespace":"kidfanjun","selfLink":"/api/v1/namespaces/kidfanjun/pods/startandstop00-v1.9.14-alpine-wqf6c","uid":"4a974e9e-d720-11e6-bfbd-00163e02bcc9","resourceVersion":"8525647","creationTimestamp":"2017-01-10T10:33:57Z","labels":{"app":"startandstop00","version":"1.9.14-alpine"},"annotations":{"kubernetes.io/created-by":"{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicationController\",\"namespace\":\"kidfanjun\",\"name\":\"startandstop00-v1.9.14-alpine\",\"uid\":\"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9\",\"apiVersion\":\"v1\",\"resourceVersion\":\"8525372\"}}\n"},"ownerReferences":[{"apiVersion":"v1","kind":"ReplicationController","name":"startandstop00-v1.9.14-alpine","uid":"d61f0ad5-d71f-11e6-bfbd-00163e02bcc9","controller":true}]},"spec":{"volumes":[{"name":"default-token-e0d8c","secret":{"secretName":"default-token-e0d8c","defaultMode":420}}],"containers":[{"name":"startandstop00","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{"limits":{"cpu":"0","memory":"0"},"requests":{"cpu":"0","memory":"0"}},"volumeMounts":[{"name":"default-token-e0d8c","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","imagePullPolicy":"Always"}],"restartPolicy":"Always","terminationGracePeriodSeconds":5,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"192.168.10.5","securityContext":{},"imagePullSecrets":[{"name":"pullsecret"}]},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:34:25Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2017-01-10T10:33:57Z"}],"hostIP":"192.168.10.5","podIP":"172.16.100.21","startTime":"2017-01-10T10:33:57Z","containerStatuses":[{"name":"startandstop00","state":{"running":{"startedAt":"2017-01-10T10:34:25Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageID":"docker://sha256:1bb49f0e0b5f983b49c5eb2d1feef9512de9fbe2c3ce0360d9a1f1b9e5713582","containerID":"docker://ddcea4f4cf31e51a4b1eec9a30bb7e66089b1af81a0798562ad44fffd523a727"}]}}]}}                                                                                                                                                      Notify:
+System.out: Running                                                                                                                                                      Notify:
+System.out: Running                                                                                                                                                      Notify:
+System.out: itmes number is 2                                                                                                                                                      Notify:
+System.out: order:{13}                                                                                                                                                      Notify:
+web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_reg_save_param started  	[MsgId: MMSG-26355]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+[DEBUG]deleteApplication
+[DEBUG]URL=http://ppe.naturecloud.io:88/apiApplication/deleteApplication
+[DEBUG]options:
+[DEBUG]Method=POST
+[DEBUG]Resource=0
+[DEBUG]RecContentType=text/html
+[DEBUG]Snapshot=t11.inf
+[DEBUG]Mode=HTML
+[DEBUG]Referer=http://ppe.naturecloud.io:88/cp/service
+[DEBUG]EncType=application/json;charset=UTF-8
+[DEBUG]Body={"svc":{"_id":"5874a684fcbd5e000eec230f","app":"{serviceName}","id":"{serviceName}","node":{"image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":true,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP","address":"http://{serviceName}.test.ppe.naturecloud.io"}],"env":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[],"secret":"a2lkZmFuanVuOjFxYXp4c3cy"},"rc":{"kind":"ReplicationController","apiVersion":"v1","metadata":{"name":"{serviceName}-v1.9.14-alpine","labels":{"app":"{serviceName}","version":"1.9.14-alpine"},"uid":"85d11d08-d715-11e6-bfbd-00163e02bcc9"},"spec":{"replicas":2,"template":{"metadata":{"labels":{"app":"{serviceName}","version":"1.9.14-alpine"}},"spec":{"containers":[{"name":"{serviceName}","image":"prod.internal.naturecloud.io/library/nginx:1.9.14-alpine","imagePullPolicy":"Always","env":[],"resources":{"limits":{"cpu":"0m","memory":"0Mi"}},"ports":[{"containerPort":80,"protocol":"TCP"}],"volumeMounts":[]}],"imagePullSecrets":[{"name":"pullsecret"}],"restartPolicy":null,"terminationGracePeriodSeconds":5,"volumes":[]}}}},"rcnum":2,"service":{"kind":"Service","apiVersion":"v1","metadata":{"name":"{serviceName}","labels":{"app":"{serviceName}"}},"spec":{"selector":{"app":"{serviceName}"},"type":"ClusterIP","ports":[{"name":"0","protocol":"TCP","port":80,"targetPort":80}]}},"totalStatue":"running","username":"kidfanjun","ver":"1.9.14-alpine","volumeType":"hostPath"},"isDelVolume":false}
+[DEBUG]LAST
+web_custom_request("deleteApplication") started  	[MsgId: MMSG-26355]
+web_custom_request("deleteApplication") was successful, 37 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+System.out: this{"ret":true,"error":null,"data":true}                                                                                                                                                      Notify:
+System.out: order:{14}                                                                                                                                                      Notify:
+Notify: Transaction "opearteservice" set.
+System.out: Scene opearteservice pass ...                                                                                                                                                      Notify:
+System.out:                                                                                                                                                        Notify:
+System.out:                                                                                                                                                        Notify:
+System.out: -------statics-------                                                                                                                                                      Notify:
+System.out: Scene:opearteservice succeed                                                                                                                                                      Notify:
+System.out: 0                                                                                                                                                      Notify:
+Ending action Actions.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

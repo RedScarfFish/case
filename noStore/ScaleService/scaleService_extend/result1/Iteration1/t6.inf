@@ -1,0 +1,13 @@
+[t6]
+SnapshotXmlFile=snapshot_6.xml
+ContentType=DummyContentType
+StepName=Custom Request: modifyRc
+Total=1
+FileName1=t6.UNK
+RequestHeaderFile=t6_RequestHeader.txt
+ResponseHeaderFile=t6_ResponseHeader.txt
+RawStepEndTime=1484188508937
+RawStepName=modifyRc
+RequestBodyFile=t6_RequestBody.txt
+RawStepStartTime=1484188508863
+URL1=file:

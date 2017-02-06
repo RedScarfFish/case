@@ -1,0 +1,13 @@
+[t8]
+SnapshotXmlFile=snapshot_8.xml
+ContentType=DummyContentType
+StepName=Custom Request: getPodStatus02
+Total=1
+FileName1=t8.UNK
+RequestHeaderFile=t8_RequestHeader.txt
+ResponseHeaderFile=t8_ResponseHeader.txt
+RawStepEndTime=1484188539026
+RawStepName=getPodStatus02
+RequestBodyFile=t8_RequestBody.txt
+RawStepStartTime=1484188539005
+URL1=file:

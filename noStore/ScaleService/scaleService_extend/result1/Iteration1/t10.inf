@@ -1,0 +1,13 @@
+[t10]
+SnapshotXmlFile=snapshot_10.xml
+ContentType=DummyContentType
+StepName=Custom Request: deleteApplication
+Total=1
+FileName1=t10.UNK
+RequestHeaderFile=t10_RequestHeader.txt
+ResponseHeaderFile=t10_ResponseHeader.txt
+RawStepEndTime=1484188569613
+RawStepName=deleteApplication
+RequestBodyFile=t10_RequestBody.txt
+RawStepStartTime=1484188569084
+URL1=file:

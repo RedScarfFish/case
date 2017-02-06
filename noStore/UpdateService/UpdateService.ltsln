@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 4.1.3.0
+Project("3D10E49D-7EB8-4A3B-ABF0-1DE3170E8E48") = "UpdateService", "UpdateService.usr", "3D10E49D-7EB8-4A3B-ABF0-1DE3170E8E48"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkM6XG5hdHVyZWNsb3VkXGxiX3NjcmlwdHNfbmV3XGphdmFcVXBkYXRlU2VydmljZVxVcGRhdGVTZXJ2aWNlXFVwZGF0ZVNlcnZpY2UudXNyPC9Mb2FkRGF0YT4NCiAgPEZpbGVzPg0KICAgIDxGaWxlPkM6XG5hdHVyZWNsb3VkXGxiX3NjcmlwdHNfbmV3XGphdmFcVXBkYXRlU2VydmljZVxVcGRhdGVTZXJ2aWNlXFVwZGF0ZVNlcnZpY2UudXNyPC9GaWxlPg0KICA8L0ZpbGVzPg0KICA8TW9kaWZpZWQ+MjAxNi0xMi0xNVQxNjowNToxMy40NjIwNiswODowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		3D10E49D-7EB8-4A3B-ABF0-1DE3170E8E48.Debug|Any CPU.Build.0 = Debug|Any CPU
+		3D10E49D-7EB8-4A3B-ABF0-1DE3170E8E48.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		3D10E49D-7EB8-4A3B-ABF0-1DE3170E8E48.Release|Any CPU.Build.0 = Release|Any CPU
+		3D10E49D-7EB8-4A3B-ABF0-1DE3170E8E48.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

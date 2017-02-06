@@ -1,0 +1,39 @@
+Notify: Found jdk version: 1.6.0.	[MsgId: MMSG-22986]
+Notify: classpath=C:\naturecloud\lb_scripts_new\java\ShareVolumeService\volumeNotShare;c:\program files (x86)\hp\loadrunner\classes\srv;c:\program files (x86)\hp\loadrunner\classes;;C:\naturecloud\lb_scripts_new\lib\gson-2.8.0.jar;C:\naturecloud\lb_scripts_new\lib\commons-net-3.5.jar;;;c:\program files (x86)\hp\loadrunner\lib\xstream-1.4.8.jar;c:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar	[MsgId: MMSG-22986]
+Notify: Path=c:\jdk1.6.0_45\jre\bin\client;C:\PROGRA~2\HP\LOADRU~1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseGit\bin;c:\jdk1.6.0_45\bin;C:\jdk1.6.0_45\jre\bin;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin	[MsgId: MMSG-22986]
+Notify: VM Params: .	[MsgId: MMSG-22986]
+Virtual User Script started at : 2017/1/9 14:02:33	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+Warning! Web support not loaded: check Java-Interpreter -> UtilityExt property in mdrv.dat file	[MsgId: MMSG-17999]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Warning: The string '"username":"kidfanjun","password":"5a690d842935c51f26f473e025c1b97a"' with parameter delimiters is not a parameter.	[MsgId: MWAR-13987]
+t=1068ms: 680-byte response headers for "http://ppe.naturecloud.io:88/userBasicInfo/authenticate" (RelFrameId=1, Internal ID=1)
+    HTTP/1.1 200 OK\r\n
+    Server: nginx/1.8.0\r\n
+    Date: Mon, 09 Jan 2017 06:02:33 GMT\r\n
+    Content-Type: text/html; charset=utf-8\r\n
+    Content-Length: 256\r\n
+    Connection: keep-alive\r\n
+    X-Powered-By: Express\r\n
+    Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoZW50aWNhdGVkIjp0cnVlLCJoYXN
+    QaG9uZSI6dHJ1ZSwidXNlcm5hbWUiOiJraWRmYW5qdW4iLCJzZWNyZXQiOiJhMmxrWm1GdWFuVnVPakZ4WVhwNGMzY
+    3kiLCJleHAiOjE0ODQ1NDY1NTMsImlhdCI6MTQ4Mzk0MTc1M30.uffuI2xWHYy-D3AcxZa8fzxWxonu_kIj8-6wogk
+    vrbM; Max-Age=604800; Path=/; Expires=Mon, 16 Jan 2017 06:02:33 GMT\r\n
+    Set-Cookie: username=kidfanjun; Max-Age=604800; Path=/; Expires=Mon, 16 Jan 2017 06:02:33 
+    GMT\r\n
+    ETag: W/"100-52JuMF8kuIacdQ8Qtdg5RA"\r\n
+    Vary: Accept-Encoding\r\n
+    \r\n
+t=1068ms: 256-byte response body for "http://ppe.naturecloud.io:88/userBasicInfo/authenticate" (RelFrameId=1, Internal ID=1)
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoZW50aWNhdGVkIjp0cnVlLCJoYXNQaG9uZSI6dHJ1ZSwid
+    XNlcm5hbWUiOiJraWRmYW5qdW4iLCJzZWNyZXQiOiJhMmxrWm1GdWFuVnVPakZ4WVhwNGMzY3kiLCJleHAiOjE0ODQ
+    1NDY1NTMsImlhdCI6MTQ4Mzk0MTc1M30.uffuI2xWHYy-D3AcxZa8fzxWxonu_kIj8-6wogkvrbM
+web_custom_request("authenticate") was successful, 256 body bytes, 680 header bytes  	[MsgId: MMSG-26386]
+Ending action vuser_init.	[MsgId: MMSG-15918]
+Running Vuser...	[MsgId: MMSG-15964]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Vuser 0 (thread 7096), ended OK."	[MsgId: MMSG-10695]

@@ -1,0 +1,8 @@
+GET /opBuildInfo/getJob?id=sample&user=kidfanjun HTTP/1.1
+Referer: http://ppe.naturecloud.io:88/cp/service
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+Accept: */*
+Connection: Keep-Alive
+Host: ppe.naturecloud.io:88
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoZW50aWNhdGVkIjp0cnVlLCJoYXNQaG9uZSI6dHJ1ZSwidXNlcm5hbWUiOiJraWRmYW5qdW4iLCJzZWNyZXQiOiJhMmxrWm1GdWFuVnVPakZ4WVhwNGMzY3kiLCJleHAiOjE0ODUzMTE3NTMsImlhdCI6MTQ4NDcwNjk1M30.7GAAxlwkvzooLxhEc3V6U6NSLesyHNB_RedAGjIZ4kk; username=kidfanjun
+

@@ -1,0 +1,6 @@
+"{"app":"redshare","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.i"
+"o/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":[],"c"
+"lusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isShared"
+"":true,"mountTargetPath":"/red","mountObj":{"name":"sharevolume","volumeId":"kidfanjun-sharevo"
+"lume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":"","size":1"
+"024,"_id":"586c6253ac2cbd000ed00ade"}}]}}"

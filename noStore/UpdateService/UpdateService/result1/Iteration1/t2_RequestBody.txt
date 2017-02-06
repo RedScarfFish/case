@@ -1,0 +1,4 @@
+"{"app":"free00","rcnum":1,"ver":"1.9.14-alpine","node":{"image":"prod.internal.naturecloud.io/"
+"library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[{"isPublic":tru"
+"e,"port":80,"targetPort":80,"protocol":"TCP","accessProtocol":"HTTP"}],"env":[],"clusterId":"d"
+"efault","cpu_shares":"0","mem_limit":"0Mi","volumes":[]}}"

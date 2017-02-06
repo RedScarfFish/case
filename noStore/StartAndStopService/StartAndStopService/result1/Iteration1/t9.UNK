@@ -1,0 +1,1 @@
+{"ret":true,"error":null,"data":{"kind":"PodList","apiVersion":"v1","metadata":{"selfLink":"/api/v1/namespaces/kidfanjun/pods","resourceVersion":"8524651"},"items":[]}}

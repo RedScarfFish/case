@@ -1,0 +1,6 @@
+"{"app":"extendvolume","rcnum":1,"ver":"1.9.14-alpine","node":{"image":"prod.internal.natureclo"
+"ud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"env":["
+"],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"isSh"
+"ared":false,"mountTargetPath":"/extend","mountObj":{"name":"extendvolume","volumeId":"kidfanju"
+"n-extendvolume","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeName":""
+"","size":1024,"_id":"58709c21c016a0000e25ef1d"}}]}}"

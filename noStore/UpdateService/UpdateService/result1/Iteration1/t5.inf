@@ -1,0 +1,13 @@
+[t5]
+SnapshotXmlFile=snapshot_5.xml
+ContentType=DummyContentType
+StepName=Custom Request: updateApplication
+Total=1
+FileName1=t5.UNK
+RequestHeaderFile=t5_RequestHeader.txt
+ResponseHeaderFile=t5_ResponseHeader.txt
+RawStepEndTime=1484062726154
+RawStepName=updateApplication
+RequestBodyFile=t5_RequestBody.txt
+RawStepStartTime=1484062725908
+URL1=http://ppe.naturecloud.io:88/apiApplication/updateApplication

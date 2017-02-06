@@ -1,0 +1,13 @@
+[t12]
+SnapshotXmlFile=snapshot_12.xml
+ContentType=DummyContentType
+StepName=Custom Request: modifyRc_2
+Total=1
+FileName1=t12.UNK
+RequestHeaderFile=t12_RequestHeader.txt
+ResponseHeaderFile=t12_ResponseHeader.txt
+RawStepEndTime=1484044437264
+RawStepName=modifyRc_2
+RequestBodyFile=t12_RequestBody.txt
+RawStepStartTime=1484044437215
+URL1=http://ppe.naturecloud.io:88/apiApplication/modifyRc

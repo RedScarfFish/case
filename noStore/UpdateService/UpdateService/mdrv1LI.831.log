@@ -1,0 +1,85 @@
+Notify: Found jdk version: 1.6.0.	[MsgId: MMSG-22986]
+Notify: classpath=C:\naturecloud\lb_scripts_new\java\UpdateService\UpdateService;c:\program files (x86)\hp\loadrunner\classes\srv;c:\program files (x86)\hp\loadrunner\classes;;C:\naturecloud\lb_scripts_new\lib\gson-2.8.0.jar;C:\naturecloud\lb_scripts_new\lib\commons-net-3.5.jar;;;c:\program files (x86)\hp\loadrunner\lib\xstream-1.4.8.jar;c:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar	[MsgId: MMSG-22986]
+Notify: Path=c:\jdk1.6.0_45\jre\bin\client;C:\PROGRA~2\HP\LOADRU~1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseGit\bin;c:\jdk1.6.0_45\bin;C:\jdk1.6.0_45\jre\bin;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin	[MsgId: MMSG-22986]
+Notify: VM Params: .	[MsgId: MMSG-22986]
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:31:54	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+Warning! Web support not loaded: check Java-Interpreter -> UtilityExt property in mdrv.dat file	[MsgId: MMSG-17999]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:00	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:00	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:10	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:20	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:31	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:41	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:41	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:32:51	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Virtual User Script started at : 2016/12/30 11:33:01	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+web_custom_request("authenticate") started  	[MsgId: MMSG-26355]
+Error -27792: Failed to connect to server "ppe.naturecloud.io:88": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

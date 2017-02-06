@@ -1,0 +1,6 @@
+"{"app":"scalevolumeshrink","rcnum":2,"ver":"1.9.14-alpine","node":{"image":"prod.internal.natu"
+"recloud.io/library/nginx:1.9.14-alpine","imageshortname":"nginx","isMarket":true,"ports":[],"e"
+"nv":[],"clusterId":"default","cpu_shares":"0","mem_limit":"0Mi","volumes":[{"IsDefault":false,"
+""isShared":false,"mountTargetPath":"/scalevolume","mountObj":{"name":"sharetest","volumeId":"k"
+"idfanjun-sharetest","namespace":"kidfanjun","status":"NOT_USE","mountAppName":"","mountNodeNam"
+"e":"","size":1024,"_id":"587050f6c016a0000e25e35c"}}]}}"

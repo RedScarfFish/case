@@ -1,0 +1,13 @@
+[t1]
+SnapshotXmlFile=snapshot_1.xml
+ContentType=text/html
+StepName=Custom Request: authenticate
+Total=1
+FileName1=t1.html
+RequestHeaderFile=t1_RequestHeader.txt
+ResponseHeaderFile=t1_ResponseHeader.txt
+RawStepEndTime=1484044241744
+RawStepName=authenticate
+RequestBodyFile=t1_RequestBody.txt
+RawStepStartTime=1484044241508
+URL1=http://ppe.naturecloud.io:88/userBasicInfo/authenticate
